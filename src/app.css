@@ -1,5 +1,17 @@
-.text{
+.container{
+    margin: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    border: 1px solid black;
+    background-color: rgb(116, 179, 235);
+}
+.dark{
+    color: white;
+    background-color: black;
+}
+
+.white{
+    color: black;
+    background-color: white;
 }
