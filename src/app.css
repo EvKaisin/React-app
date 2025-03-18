@@ -1,17 +1,42 @@
-.container{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    background-color: rgb(116, 179, 235);
-}
-.dark{
-    color: white;
-    background-color: black;
+.registration_text{
+    padding-left: 10px;
 }
 
-.white{
-    color: black;
-    background-color: white;
+.registration_field{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: max-content;
+    margin-bottom: 2px;
+}
+
+.registration_btn{
+    margin-top: 10px;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.card_about{
+    width: max-content;
+    padding: 30px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #80808029;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
 }

@@ -1,28 +1,35 @@
-// import { useEffect, useState } from 'react';
-import './app.css'
-// import NavBar from './components/NavBar/NavBar';
-// import Button from './components/Button/Button';
-import Hero from './components/Hero/Hero';
-import Welcome from './components/Welcome/Welcome';
-
-
+import { useState } from "react";
+import "./app.css";
+import Registration from "./components/Registration/Registration";
+import About from "./components/About/About";
 
 function App() {
-  // const [word, setWord] = useState('Evgenii')
+  const [click, setClick] = useState(false); //задал изначальное состояние
+  const [about, setAbout] = useState(false);
+  const formHandler = () => {
+    setClick(!click); // изменил изначальное состояние на противоположное
+  };
+
+  const aboutHandler = () => {
+    setAbout(!about); // изменил изначальное состояние на противоположное
+  };
+
   return (
     <>
-      {/* <div className="container">
-        <p>{word}</p>
-        <NavBar word={'evgenii'} />
-        <Button text={'Click'} theme={'dark'} />
-      </div> */}
-      <Hero/>
-      <div>
-        <Welcome name={'Evgenii'}/>
-        <Welcome name={'Marina'}/>
-        <Welcome name={'Nikita'}/>
-        <Welcome name={'Katya'}/>
+      <div className="registration_text">
+        <p>Регистрация</p>
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/parakeet-line/48/sorting-arrows.png"
+          alt="sorting-arrows"
+          onClick={formHandler}
+        />
+        {click && <Registration />}
+        {/* по клику указывает какой компонент отобразить */}
       </div>
+        <p onClick={aboutHandler}>Обо мне</p>
+        {about && <About />}
     </>
   );
 }
