@@ -1,3 +1,4 @@
+import { Button, notification } from "antd";
 import { useState } from "react";
 
 export default function About() {
@@ -7,8 +8,18 @@ export default function About() {
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
+
+  const [api, contextHolder] = notification.useNotification();
+  const openNotification = () => {
+    api.info({
+      message: `Уведомление `,
+      description: <p>Сообщение отправлено</p>,
+    });
+  };
+
   return (
     <>
+      {contextHolder}
       <div className="card_about">
         <img src={data.avatar_url} alt="avatar" className="avatar" />
         <p>Меня зовут {data.name}</p>
@@ -40,6 +51,9 @@ export default function About() {
               alt="telegram"
             />
           </a>
+        </div>
+        <div>
+          <Button onClick={() => openNotification()}>Отправить</Button>
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./app.css";
 import Registration from "./components/Registration/Registration";
 import About from "./components/About/About";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [click, setClick] = useState(false); //задал изначальное состояние
@@ -17,19 +18,10 @@ function App() {
   return (
     <>
       <div className="registration_text">
-        <p>Регистрация</p>
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/parakeet-line/48/sorting-arrows.png"
-          alt="sorting-arrows"
-          onClick={formHandler}
-        />
-        {click && <Registration />}
-        {/* по клику указывает какой компонент отобразить */}
+       <Navbar formHandler={formHandler} aboutHandler={aboutHandler}/> 
+       {click && <Registration />}
+       {about && <About />}
       </div>
-        <p onClick={aboutHandler}>Обо мне</p>
-        {about && <About />}
     </>
   );
 }

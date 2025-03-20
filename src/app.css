@@ -14,6 +14,11 @@
     margin-top: 10px;
 }
 
+.registration{
+    display: flex;
+    justify-content: center;
+}
+
 .avatar{
     width: 200px;
     height: 200px;
@@ -39,4 +44,20 @@
     display: flex;
     flex-direction: column;
     max-width: max-content;
+}
+.link_tag{
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    gap: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background: #ebebeb;
 }
