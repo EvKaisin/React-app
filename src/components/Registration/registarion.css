@@ -1,0 +1,20 @@
+.registration_text{
+  padding-left: 10px;
+}
+
+.registration_field{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: max-content;
+  margin-bottom: 2px;
+}
+
+.registration_btn{
+  margin-top: 10px;
+}
+
+.registration{
+  display: flex;
+  justify-content: center;
+}

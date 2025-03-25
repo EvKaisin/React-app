@@ -1,8 +1,22 @@
-export default function Navbar({formHandler , aboutHandler}) {
+import { Link } from "react-router-dom";
+import './navbar.css'
+
+export default function Navbar() {
   return (
-    <div className="navbar">
-       <p onClick={formHandler} className="link_tag">Регистрация</p>
-        <p onClick={aboutHandler} className="link_tag">Обо мне</p>
+    <div className='navbar'>
+      <Link to={"/"} className="link_tag">
+        Главная страница
+      </Link>
+      <Link to={"/reg"} className="link_tag">
+        Регистрация
+      </Link>
+      <Link to={"/about"} className="link_tag">
+        Обо мне
+      </Link>
+      <Link to={"/smarthouse"} className="link_tag">
+        Умный дом
+      </Link>
+      
     </div>
-  )
+  );
 }

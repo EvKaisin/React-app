@@ -1,0 +1,17 @@
+.link_tag{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  width: max-content;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  gap: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: #ebebeb;
+}

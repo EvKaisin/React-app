@@ -1,0 +1,26 @@
+.avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card_about{
+  width: max-content;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #80808029;
+
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}

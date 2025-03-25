@@ -1,5 +1,6 @@
 import { Button, notification } from "antd";
 import { useState } from "react";
+import "./about.css"
 
 export default function About() {
   const [data, setData] = useState({});

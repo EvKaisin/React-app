@@ -1,7 +1,7 @@
 import { Button } from "antd";
-// import Password from "antd/es/input/Password";
+import "./registarion.css";
 
-export default function Registration({ name }) {
+export default function Registration() {
 
   const dataUser = [];
   
@@ -10,6 +10,8 @@ export default function Registration({ name }) {
 
   const getLogin = (e) => {
     login = e.target.value;
+    console.log(login);
+     
   };
   
   const getPassword = (e)=>{
