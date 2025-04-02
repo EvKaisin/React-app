@@ -31,7 +31,8 @@ export default function Registration() {
         <input type="text" onChange={getLogin}/>
         <p>Пароль:</p>
         <input type="password"  onChange={getPassword}/>
-
+        <p>Ваш возраст:</p>
+        <input type="age"/>
         <Button color="default" variant="solid" className="registration_btn" onClick={sendHandler}>
             Регистрация
           </Button>

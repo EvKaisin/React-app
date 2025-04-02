@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import SmartHouse from "./components/SmartHouse/SmartHouse";
+import ToDo from "./components/Todo/ToDo";
 
 function App() {
   // const [click, setClick] = useState(false); //задал изначальное состояние
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/reg" element={<Registration/>}/>
         <Route path="/smarthouse" element={<SmartHouse/>}/>
+        <Route path="/todo" element={<ToDo/>}/>
         <Route path="/*" element={<>Такой страницы не существует</>}/>
 
       </Routes>

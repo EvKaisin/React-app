@@ -16,6 +16,9 @@ export default function Navbar() {
       <Link to={"/smarthouse"} className="link_tag">
         Умный дом
       </Link>
+      <Link to={"/todo"} className="link_tag">
+        Список дел
+      </Link>
       
     </div>
   );
